@@ -1,0 +1,24 @@
+version: '3.6'
+services:
+  iris:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports: 
+      - 1972
+      - 32792:52773
+      - 53773
+    volumes:
+      - ./:/irisdev/app
+
+  jgw:
+    image: intersystemsdc/pexoperation:latest
+    #    environment:
+    #      - JVMARGS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+    build:
+      context: java
+      dockerfile: Dockerfile
+    restart: always
+    ports: 
+      - 55555:55555

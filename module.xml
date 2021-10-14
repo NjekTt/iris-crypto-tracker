@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="crypto-pex.ZPM">
+    <Module>
+      <Name>crypto-pex</Name>
+      <Version>1.0.0</Version>
+      <Packaging>module</Packaging>
+      <Dependencies>
+        <ModuleReference>
+          <Name>sslclient</Name>
+          <Version>1.0.1</Version>
+        </ModuleReference>
+      </Dependencies>
+      <SourcesRoot>iris/src</SourcesRoot>
+      <!-- <Resource Name="dc.irisbi.PKG"/>
+      <Resource Name="dc.irisbi.covid19D.GBL" />
+      <Resource Name="*.DFI" /> -->
+    </Module>
+  </Document>
+</Export>
